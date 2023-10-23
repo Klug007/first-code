@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 30px;
+    /* padding-bottom: 100px; */
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    background-image: url(pexels-photo-3218467.jpeg);
+    filter: brightness(80%);
+    background-position: 50% 50%;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+}
+
+.box img {
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
+}
+
+.box3 {
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+
+.box3 h1 {
+    font-size: 3.75vw;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.box3 p {
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+
+    border-top: 40px solid white;
+}
+main {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+}
+.text {
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 100px;
+}
+.text h2 {
+    font-weight: 100;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.text h1 {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.items {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 55px;
+    align-items: center;
+    text-align: center;
+}
+
+.items:nth-child(1) {
+    min-height: 405px;
+    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/62c4998046a15404b6087759/pexels-marta-dzedyshko-2067396.jpg);
+    background-position: 50%;
+    background-size: 100%;
+}
+
+.items h3 {
+    font-size: 26px;
+}
+
+.items p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.items a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.items:nth-child(3) {
+    min-height: 405px;
+    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/1a2b51f955095ac4927b66b5/pexels-photo-4099237.jpeg);
+    background-position: 50%;
+    background-size: 100%;
+}
+
+.items:nth-child(5) {
+    min-height: 405px;
+    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/1d2b8399c28556d891209d24/pexels-photo-949069.jpeg);
+    background-position: 50%;
+    background-size: 100%;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.div {
+    padding: 80px;
+    padding-bottom: 30px;
+}
+
+.div h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+.div h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.div2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.te {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 320px;
+    width: 400px;
+    padding: 30px;
+}
+
+.te p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.te h1 {
+    padding: 20px;
+    font-size: 2.75rem;
+    font-weight: lighter;
+}
+
+.div3 {
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: transparent;
+    width: 260px;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+    header::before {
+        height: 150%;
+    }
+    .box3 {
+        width: 100%;
+    }
+    .box3 h1 {
+        font-size: 36px;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    .box3 p {
+        font-size: 28px;
+        font-weight: 100;
+    }
+    .box2 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .text h2 {
+        font-weight: 100;
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .text h1 {
+        font-size: 41px;
+        font-weight: 300;
+    }
+
+    .div h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .div h3 {
+        font-size: 28px;
+        font-weight: lighter;
+    }
+    .div2 {
+        flex-direction: column;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
